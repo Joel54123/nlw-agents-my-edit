@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NLW20</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="./assets/Clash_Royale_(2).svg" alt="logo">
+	</header>
+	
+	<main>
+		<section>
+			<h2>Assistente de Meta</h2>
+			<p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+
+			<form>
+				<input id="apiKey" type="password" placeholder="Chave do gemini">
+
+				<select id="gameSelect">
+					<option value="">selecione um jogo</option>
+					<option value="CS">CS</option>
+					<option value="Royale">Clash royale</option>
+				</select>
+
+				<input id="question" type="text" placeholder="Digite a sua pergunta...">
+
+				<button>Perguntar</button>
+			</form>
+			
+			<div id="iaResponse">
+				<div id="aiContent">
+
+				</div>
+			</div>
+		</section>
+
+	
+	</main>
+
+
+	<script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
