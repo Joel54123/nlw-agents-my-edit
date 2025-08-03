@@ -5,10 +5,10 @@ body * {
 }
 
 header {
-    background-image:  url("./assets/1124066.jpg");
+    /* background-image:  url("./assets/1124066.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: 100% auto;
+	background-size: 100% auto; */
     height: 25rem;
 }
 
@@ -94,7 +94,7 @@ main {
 	animation-duration: 0.7s;
 	animation-delay: 0.4s;
 	animation-fill-mode: forwards;
-	transform: translateY(2rem);
+	transform: translateY(-10rem);
 	opacity: 0;
 }
 

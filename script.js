@@ -23,15 +23,18 @@ const perguntarAI = async (apiKey, game, question) => {
     - Considere a data atual ${new Date().toLocaleDateString()}
     - Faça pesquisas atualizadas sobre o patch atual, baseado na data atual, para dar uma resposta coerente.
     - Nunca responsda itens que vc não tenha certeza de que existe no patch atual.
+    - Se o jogo for o clash royale considere os decks tradicionais e os deck meta como opcoes apropriadas.
+    - Sempre que sugerir um deck considere cartas que tenham sinergia como o caso do "corredor e terremo ou gigante real e pescador" nunca sugira cartas que nao tenham sinergia como por exemplo pekka em um deck log bait.
+    - Considere sempre sugerir duas cartas que tenham evolução no deck.
 
     ## Resposta
-    - Economize na resposta, seja direto mas explique bem o contexto e aplicação, responda no máximo 1000 caracteres
+    - Economize na resposta, seja direto mas explique bem o contexto e aplicação.
     - Responda em markdown
     - Não precisa fazer nenhuma saudação ou despedida, apenas responda o que o usuário está querendo.
 
     ## Exemplo de resposta
     pergunta do usuário: Melhor deck meta da atualidade
-    resposta: Deck: \n\n **Conceitos gerais do deck e como usa-lo:**\n\n Coloque aqui o conceito e explique a funcao de cada carta.\n\n**Cartas:**\n\nColoque as cartas aqui separe por condicao de vitoria, tank, suporte e feiticos, se for necessario acrescentar algo ou mudar a ordem da lista fique avontade.\n\n **Decks counter:**\n\n exemplo de decks counter\n\n **Se for necessario acrescentar mais alguma informacao importante acrescente aqui
+    resposta: Deck: \n\n **Conceitos gerais do deck e como usa-lo:**\n\n Coloque aqui o conceito e explique a funcao de cada carta, indique aqui tambem se houver alguma carta com evolução que faca sentido usar.\n\n**Cartas:**\n\nColoque as cartas aqui separe por condicao de vitoria, tank, defesa aérea, construão (se for o caso), feiticos, distração. Se for necessario acrescentar algo ou mudar a ordem da lista fique avontade.\n\n **Decks counter:**\n\n exemplo de decks counter\n\n **Se for necessario acrescentar mais alguma informacao importante acrescente aqui.
 
     ---
     Aqui está a pergunta do usuário: ${question}
